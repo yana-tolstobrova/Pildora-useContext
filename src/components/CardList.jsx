@@ -26,8 +26,8 @@ export default function CardList() {
     <CardContext.Provider value={cards}>
       <div>
         <div className="cards">
-          {cards.map((card) => (
-            <div key={card.id}>
+          {cards.map((card, index) => (
+            <div key={index}>
               <span>{card.englishName}</span>
             </div>
           ))}
